@@ -34,8 +34,6 @@ print('loading images ...')
 for img in img_list:
     input_img = cv2.imread(TRAIN_DIR + '/' + img)
     input_img = cv2.cvtColor(input_img, cv2.COLOR_BGR2GRAY)
-    #input_img_resize = cv2.resize(input_img, (img_rows, img_cols))
-    #img_data_list.append(input_img_resize)
     input_img_flatten = image_to_feature_vector(input_img, (img_rows, img_cols))
     img_data_list.append(input_img_flatten)
 

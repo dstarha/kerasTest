@@ -17,7 +17,7 @@ from sklearn.cross_validation import train_test_split
 
 
 MODEL_NAME = 'KerasTestModel_{}'.format(time.strftime("%d_%m_%Y_%H-%M-%S"))
-TRAIN_DIR = 'train/'
+TRAIN_DIR = 'yalefaces\\JPG\\'
 
 img_rows = 128
 img_cols = 128
